@@ -1,6 +1,7 @@
+%{?_javapackages_macros:%_javapackages_macros}
 Name:          ehcache-core
 Version:       2.6.7
-Release:       3%{?dist}
+Release:       3.0%{?dist}
 Summary:       Easy Hibernate Cache
 License:       ASL 2.0
 URL:           http://ehcache.org/
