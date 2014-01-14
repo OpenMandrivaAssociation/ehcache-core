@@ -1,7 +1,6 @@
-%_javapackages_macros
 Name:          ehcache-core
 Version:       2.6.7
-Release:       3.0%{?dist}
+Release:       3%{?dist}
 Summary:       Easy Hibernate Cache
 License:       ASL 2.0
 URL:           http://ehcache.org/
@@ -103,3 +102,39 @@ This package contains javadoc for %{name}.
 
 %files javadoc -f .mfiles-javadoc
 %doc src/assemble/EHCACHE-CORE-LICENSE.txt
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.7-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Fri Jul 05 2013 gil cattaneo <puntogil@libero.it> - 2.6.7-2
+- switch to XMvn
+- minor changes to adapt to current guideline
+
+* Fri May 24 2013 gil cattaneo <puntogil@libero.it> - 2.6.7-1
+- update to 2.6.7
+
+* Sun Apr 21 2013 gil cattaneo <puntogil@libero.it> - 2.6.6-1
+- update to 2.6.6
+
+* Wed Feb 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.0-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 2.6.0-4
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Wed Nov 07 2012 Marek Goldmann <mgoldman@redhat.com> - 2.6.0-3
+- Add support for new Maven compat version resolver (hibernate3)
+
+* Wed Jul 18 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Fri Jul 13 2012 gil cattaneo <puntogil@libero.it> - 2.6.0-1
+- update to 2.6.0
+
+* Sat Apr 21 2012 gil cattaneo <puntogil@libero.it> - 2.5.2-1
+- update to 2.5.2
+
+* Mon Mar 12 2012 Andy Grimm <agrimm@gmail.com> - 2.5.1-1
+- Initial packaging
