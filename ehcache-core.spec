@@ -1,8 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:          ehcache-core
 Version:       2.6.7
-Release:       3.0%{?dist}
+Release:       5.0
 Summary:       Easy Hibernate Cache
+Group:	       Development/Java
 License:       ASL 2.0
 URL:           http://ehcache.org/
 # svn export http://svn.terracotta.org/svn/ehcache/tags/ehcache-core-2.6.7
@@ -12,6 +13,7 @@ URL:           http://ehcache.org/
 # find ehcache-core-2.6.7 -name '*.class' -delete
 # tar czf ehcache-core-2.6.7-clean-src-svn.tar.gz ehcache-core-2.6.7
 Source0:       %{name}-%{version}-clean-src-svn.tar.gz
+Patch0:        %{name}-2.6.7-java8.patch
 
 BuildRequires: ehcache-parent
 BuildRequires: java-devel
@@ -21,6 +23,7 @@ BuildRequires: hibernate3 >= 3.6.10-7
 BuildRequires: ehcache-sizeof-agent
 BuildRequires: slf4j
 BuildRequires: tomcat-servlet-3.0-api
+BuildRequires: mvn(org.slf4j:slf4j-jdk14)
 
 # test
 %if 0
@@ -64,6 +67,7 @@ This package contains javadoc for %{name}.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %pom_remove_plugin org.codehaus.gmaven:gmaven-plugin
 %pom_remove_plugin org.eclipse.m2e:lifecycle-mapping
