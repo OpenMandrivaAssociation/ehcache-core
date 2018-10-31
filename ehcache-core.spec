@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:          ehcache-core
 Version:       2.6.7
-Release:       5.1
+Release:       5.2
 Summary:       Easy Hibernate Cache
 Group:	       Development/Java
 License:       ASL 2.0
