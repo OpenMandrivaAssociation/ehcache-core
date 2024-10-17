@@ -5,7 +5,7 @@ Release:       5.2
 Summary:       Easy Hibernate Cache
 Group:	       Development/Java
 License:       ASL 2.0
-URL:           http://ehcache.org/
+URL:           https://ehcache.org/
 # svn export http://svn.terracotta.org/svn/ehcache/tags/ehcache-core-2.6.7
 # find ehcache-core-2.6.7 -name '*.jar' -delete
 # ehcache-core-2.6.7/tools/maven-ant-tasks-2.0.7.jar
